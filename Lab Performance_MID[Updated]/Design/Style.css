@@ -1,0 +1,10 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+.container{
+
+    width: 400px;
+    margin: 140px auto;
+}
