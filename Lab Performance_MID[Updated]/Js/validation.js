@@ -11,6 +11,7 @@ function calc()
         alert("Quantity can not be a negative value, resetting this into 0");
         quantity=0;
         quantityy.value=0;
+        
     }
     let total=quantity*unitPrice*30;
 
