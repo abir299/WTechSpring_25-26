@@ -1,18 +1,18 @@
 const unitPrice=1000;
-const quantity=document.getElementById("Quantity");
-const totalprice=document.getElementById("totalPrice");
+const quantityy=document.getElementById("quantity");
+const totalprice=document.getElementById("Totalprice");
 
 function calc()
 {
-    let Quantity= parseInt(quantity.value)||0;
+    let quantity= parseInt(quantityy.value)||0;
 
-    if(Quantity<0)
+    if(quantity<0)
     {
-        alert("Quantity can not be a negetive value, resetting this into 0");
-        Quantity=0;
-        quantity.value=0;
+        alert("Quantity can not be a negative value, resetting this into 0");
+        quantity=0;
+        quantityy.value=0;
     }
-    let total=Quantity*unitPrice*30;
+    let total=quantity*unitPrice*30;
 
     totalprice.value=total;
     if(total>1000)
@@ -23,4 +23,4 @@ function calc()
 
 }
 
-Quantity.addEventListener("input",calc);
+quantityy.addEventListener("input",calc);
